@@ -12,7 +12,7 @@ body {
     display: flex;
     background: #7A419B;
     min-height: 100vh;
-    background: linear-gradient(135deg, #7c1599 0%,#921099 48%,#7e4ae8 100%);
+    background: linear-gradient(135deg, rgb(0, 0, 0) 15%, #63b222 50%, #000000 85%);
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -20,8 +20,8 @@ body {
 
 .player {
     max-width: 750px;
-    border: 5px solid rgba(0,0,0,0.2);
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
     position: relative;
     font-size: 0;
     overflow: hidden;
@@ -46,7 +46,7 @@ body {
     background: none;
     border: 0;
     line-height: 1;
-    color: white;
+    color: #63b222;
     text-align: center;
     outline: 0;
     padding: 0;
@@ -55,7 +55,7 @@ body {
 }
 
 .player__button:focus {
-    border-color: #ffc600;
+    border-color: #63b222;
 }
 
 .player__slider {
@@ -99,7 +99,7 @@ body {
 
 .progress__filled {
     width: 50%;
-    background: #ffc600;
+    background: #63b222;
     flex: 0;
     flex-basis: 50%;
 }
@@ -131,7 +131,7 @@ input[type=range]::-webkit-slider-thumb {
     height: 15px;
     width: 15px;
     border-radius: 50px;
-    background: #ffc600;
+    background: #63b222;
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -3.5px;
